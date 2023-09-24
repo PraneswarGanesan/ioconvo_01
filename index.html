@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--tailwind inclu-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <!--bootstarp and other links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+<style>
+   .parallax-container {
+            background-image: url('./imgsrc/purpel\ castel.jpeg'); /* Replace with your image URL */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+        }
+</style>
+</head>
+<body>
+  <div class="parallax-container">
+    <nav class="bg-transparent p-4">
+      <div class="container mx-auto flex items-center justify-between">
+          <!-- Left side with logo -->
+          <div class="flex items-center">
+              <img src="./imgsrc/logo1.png" alt="Logo" class="w-20 h-12 mr-4">
+          </div>
+          <!-- Right side with navigation links -->
+          <ul class="flex space-x-6 px-8">
+              <li><a href="#" class="text-white " style="text-decoration: none;">Home</a></li>
+              <li><a href="./about _us.html" class="text-white " style="text-decoration: none;">About</a></li>
+              <li><a href="#" class="text-white " style="text-decoration: none;">Contact</a></li>
+              <li><div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
+                    </svg>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./login.html" style="text-decoration: none;">Login</a></li>
+                      <li><a class="dropdown-item" href="./signin.html" style="text-decoration: none;">Signup</a></li>
+                    </ul>
+                  </div>
+                </button>
+               </li>
+          </ul>
+      </div>
+  </nav>
+  
+  
+  <div class="bg-transparent min-h-screen flex items-center justify-center">
+    <div class="container mx-auto flex flex-col lg:flex-row pb-24 pr-36">
+        <!-- Text on the left side (lg:w-1/2 for large screens) -->
+        <div class="bg-white rounded-md shadow-2xl ring-fuchsia-400 p-8 lg:w-2/3  ">
+            <h1 class="text-4xl font-bold mb-4">Welcome to Our Website</h1>
+            <p class="text-gray-600"> **High-Quality Downloads**: We provide high-quality video downloads to ensure that you experience the same level of clarity and enjoyment as when streaming online.
+
+               **User-Friendly Interface**: Our user-friendly website makes it simple to search for and download videos. Just paste the video URL, choose your preferred quality, and start downloading.
+              
+               **Free and Fast**: We believe in providing our users with a fast and efficient downloading experience without any hidden costs. Our service is free and accessible to everyone.
+              
+               **Safe and Secure**: Your privacy and security are important to us. We prioritize maintaining a secure platform for all your downloads.
+              .</p>
+              
+        </div>
+        <!-- Image on the right side (lg:w-1/2 for large screens) -->
+        <div class="lg:w-1/3 rounded-md shadow-2xl ring-fuchsia-400">
+          <img src="./imgsrc/1-Astronaut in the Flowers Field AI Art.jpeg" alt="Image" class="w-auto h-auto rounded-sm shadow-xl ring-fuchsia-400">
+      </div>
+    </div>
+</div>
+</div>
+<!-------------------youtube-------------------------------------------------------------------------->  
+<div class="container mx-auto p-16 " >
+    <div class="flex justify-around ">
+      <div class="bg-gray-600 m-10 rounded-lg text-white shadow-xl ring-fuchsia-400 py-16 px-16">
+        <p>
+         Download your Youtube video <img src="./imgsrc/youtube.png" alt="" srcset="" class="w-12 h-12">
+         <form>
+          <!-- Video URL Input -->
+          <div class="mb-4">
+              <label for="videoUrl" class="block text-white text-sm font-bold mb-2">Video URL:</label>
+              <input type="text" id="videoUrl" name="videoUrl" class=" texy-black w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300 " placeholder="Enter video URL" required>
+          </div>
+          <!-- Video Quality Dropdown -->
+          <div class="mb-4">
+              <label for="videoQuality" class="block text-white text-sm font-bold mb-2">Video Quality:</label>
+              <select id="videoQuality" name="videoQuality" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300 text-gray-700">
+                  <option value="1080p">1080p</option>
+                  <option value="720p">720p</option>
+                  <option value="480p">480p</option>
+                  <option value="360p">360p</option>
+              </select>
+          </div>
+          <!-- Download Button -->
+          <div>
+              <button type="submit" class="bg-yellow-300 text-white py-2 px-4 rounded-lg hover:bg-yellow-500 transition duration-300">Download</button>
+          </div>
+      </form>
+          <ul>
+            <li>1. Copy the URL of the video you want to download.</li>
+          <li>2. Paste the URL into our website's search bar.</li>
+          <li> 3. Select your desired video quality (if available).</li>
+          <li>  4. Click the download button, and voila! Your video will be downloaded to your device.</li>
+          </ul>
+        </p>  
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------------instagram prallax page---->
+  <div class="parallax-container">
+    <div class="bg-transparent min-h-screen flex items-center justify-center">
+      <div class="container mx-auto flex flex-col lg:flex-row">
+          <!-- Text on the left side (lg:w-1/2 for large screens) -->
+          <div class="bg-white rounded-md shadow-2xl ring-fuchsia-400 px-28 lg:w-2/3">
+            <br><br><br>
+              <h1 class="text-4xl font-bold mb-4">Download the instagram</h1>
+              <p class="text-gray-600">With our easy-to-use Instagram video downloader, you can save your favorite Instagram videos to your device and watch them offline. Whether it's funny moments, inspiring stories, or informative content, you can keep it all at your fingertips.
+              Paste the Instagram video URL in the provided field.Paste the Instagram video URL in the provided field. Choose your preferred video quality (if available).Our Instagram video downloader is fast, free, and secure. Your privacy is important to us, and we ensure a safe and hassle-free downloading experience.
+              Click the "Download" button.
+              Enjoy your downloaded Instagram video.
+              <br>
+             <br><br> 
+
+
+
+              </p>             
+          </div>
+          <!-- Image on the right side (lg:w-1/2 for large screens) -->
+          <div class="lg:w-1/3 rounded-md shadow-2xl ring-fuchsia-400">
+            <img src="./imgsrc/1-Astronaut in the Flowers Field AI Art.jpeg" alt="Image" class="w-auto h-auto rounded-sm shadow-xl ring-fuchsia-400">
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  <!-----------------------------------------------instagram main body-->
+  <div class="container mx-auto p-16 " style="background-color: rgb(117, 92, 126);">
+    <div class="flex justify-around ">
+      <div class="bg-gray-700 m-10 rounded-lg text-white shadow-xl ring-fuchsia-400 py-16 px-16">
+        <p>
+         Download your Youtube video <img src="./imgsrc/instagram.png" alt="no image" srcset="" class="w-12 h-12">
+         <form>
+          <!-- Video URL Input -->
+          <div class="mb-4">
+              <label for="videoUrl" class="block text-white text-sm font-bold mb-2">File URL:</label>
+              <input type="text" id="videoUrl" name="videoUrl" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter video URL" required>
+          </div>
+          <!-- Video Quality Dropdown -->
+          <div class="mb-4">
+              <label for="videoType" class="block text-white text-sm font-bold mb-2">Video Type:</label>
+              <select id="videoType" name="videoQuality" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300 text-gray-400">
+                  <option value="reels">Reels</option>
+                  <option value="story">Story</option>
+                  <option value="post">Post</option>
+                 
+              </select>
+          </div>
+          <!-- Download Button -->
+          <div>
+              <button type="submit" class="bg-gray-400 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Download</button>
+          </div>
+      </form>
+          <ul>
+            <li>1. Copy the URL of the video you want to download.</li>
+          <li>2. Paste the URL into our website's search bar.</li>
+          <li> 3. Select your desired video quality (if available).</li>
+          <li>  4. Click the download button, and voila! Your video will be downloaded to your device.</li>
+          </ul>
+        </p>  
+      </div>
+    </div>
+  </div>
+  <!--------------------------------------------------------Spotify-->
+
+    <div class="parallax-container">
+    <div class="bg-transparent min-h-screen flex items-center justify-center">
+      <div class="container mx-auto flex flex-col lg:flex-row">
+          <!-- Text on the left side (lg:w-1/2 for large screens) -->
+          <div class="bg-white rounded-md shadow-2xl ring-fuchsia-400 px-28 lg:w-2/3">
+            <br><br><br>
+              <h1 class="text-4xl font-bold mb-4">Download From Spotify</h1>
+              <p class="text-gray-600">High-Quality Downloads: Enjoy your favorite songs in the best quality available.
+                Easy-to-Use: Our user-friendly interface makes downloading Spotify music a breeze.
+                Fast and Secure: We prioritize speed and security to ensure your peace of mind.
+                Free of Charge: Our Spotify downloader is completely free with no hidden fees.
+                Playlist Downloads: Download entire Spotify playlists with a single click.
+                Cross-Platform Support: Our service works on all devices and operating systems.
+                Unlimited Downloads: There are no restrictions on how many songs you can download.
+                Offline Listening: Enjoy your downloaded Spotify music without an internet connection.
+                Latest Updates: We keep our service up-to-date to support the latest Spotify features and changes.
+                Privacy Guaranteed: Your data and download history are kept private and secure."
+              <br>
+             <br><br> 
+
+
+
+              </p>             
+          </div>
+          <!-- Image on the right side (lg:w-1/2 for large screens) -->
+          <div class="lg:w-1/3 rounded-md shadow-2xl ring-fuchsia-400">
+            <img src="./imgsrc/1-Astronaut in the Flowers Field AI Art.jpeg" alt="Image" class="w-auto h-auto rounded-sm shadow-xl ring-fuchsia-400">
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+<!----------------------------------------------spotify download-->
+<div class="container mx-auto p-16 " style="background-color: #a5f25e;">
+  <div class="flex justify-around ">
+    <div class="m-10 rounded-lg text-white shadow-xl ring-fuchsia-400 py-16 px-16" style="background-color: #40613e;">
+      <p>
+       Download your Music <img src="./imgsrc/spotify.png" alt="no image" srcset="" class="w-12 h-12">
+       <form>   
+        <!-- Video URL Input -->
+        <div class="mb-4">
+            <label for="videoUrl" class="block text-white text-sm font-bold mb-2">File URL:</label>
+            <input type="text" id="videoUrl" name="videoUrl" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter Music URL" required>
+        </div>
+        <!-- Video Quality Dropdown -->
+        <div class="mb-4">
+            <label for="videoType" class="block text-white text-sm font-bold mb-2">Audio Type:</label>
+            <select id="videoType" name="videoQuality" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300 text-gray-400">
+                <option value="reels">Music</option>
+                <option value="story">Playlist</option>
+                <option value="post">Podcast</option>
+               
+            </select>
+        </div>
+        <!-- Download Button -->
+        <div>
+            <button type="submit" class="bg-gray-400 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Download</button>
+        </div>
+    </form>
+        <ul>
+          <li>1. Copy the URL of the music you want to download.</li>
+        <li>2. Paste the URL into our website's search bar.</li>
+        <li> 3. Select your desired type.</li>
+        <li>  4. Click the download button, and voila! Your file will be downloaded to your device.</li>
+        </ul>
+      </p>  
+    </div>
+  </div>
+</div>
+</body>
+</html>
